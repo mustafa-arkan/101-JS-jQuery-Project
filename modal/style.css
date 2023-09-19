@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn_login {
+  width: 140px;
+  padding: 12px;
+  font-size: 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.loginform {
+  width: 350px;
+  padding: 30px 20px;
+  background-color: #fff;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transition: 2s;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.showloginform {
+  top: 50%;
+}
+.loginform input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  border: 0.5px solid gray;
+}
+span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.submit_login {
+  width: 126px;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid orange;
+  border-radius: 5px;
+}

@@ -1,0 +1,30 @@
+.display_data {
+  display: flex;
+  gap: 40px;
+}
+
+.display_data div {
+  width: 33%;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.input_data {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.input_data form {
+  width: 50%;
+  height: 250px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.input_data form button {
+  margin-top: 20px;
+}

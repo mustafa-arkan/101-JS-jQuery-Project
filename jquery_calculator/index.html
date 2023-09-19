@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" id="display" />
+          </div>
+
+          <div class="operator">
+            <input
+              type="button"
+              value="AC"
+              class="btn"
+              onclick="clearNumber()"
+            />
+            <input
+              type="button"
+              value="DE"
+              class="btn"
+              onclick="deleteNumber()"
+            />
+            <!-- onclick="display.value =display.value.toString().slice(0,-1) " -->
+            <input
+              type="button"
+              value="."
+              class="btn"
+              onclick="insertNumber('.')"
+            />
+            <input
+              type="button"
+              value="/"
+              class="btn btn-style"
+              onclick="insertNumber('/')"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              class="btn"
+              onclick="insertNumber(7)"
+            />
+            <input
+              type="button"
+              value="8"
+              class="btn"
+              onclick="insertNumber(8)"
+            />
+            <input
+              type="button"
+              value="9"
+              class="btn"
+              onclick="insertNumber(9)"
+            />
+            <input
+              type="button"
+              value="*"
+              class="btn btn-style"
+              onclick="insertNumber('*')"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              class="btn"
+              onclick="insertNumber(4)"
+            />
+            <input
+              type="button"
+              value="5"
+              class="btn"
+              onclick="insertNumber(5)"
+            />
+            <input
+              type="button"
+              value="6"
+              class="btn"
+              onclick="insertNumber(6)"
+            />
+            <input
+              type="button"
+              value="-"
+              class="btn btn-style"
+              onclick="insertNumber('-')"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              class="btn"
+              onclick="insertNumber(1)"
+            />
+            <input
+              type="button"
+              value="2"
+              class="btn"
+              onclick="insertNumber(2)"
+            />
+            <input
+              type="button"
+              value="3"
+              class="btn"
+              onclick="insertNumber(3)"
+            />
+            <input
+              type="button"
+              value="+"
+              class="btn btn-style"
+              onclick="insertNumber('+')"
+            />
+          </div>
+
+          <div class="equal_div">
+            <input
+              type="button"
+              value="0"
+              class="btn"
+              onclick="insertNumber(0)"
+            />
+            <input
+              type="button"
+              value="%"
+              class="btn"
+              onclick="insertNumber('%')"
+            />
+            <input
+              type="button"
+              value="="
+              class="btn equalButton btn-style"
+              onclick="calculate()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

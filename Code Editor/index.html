@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <label>HTML</label>
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label>CSS</label>
+        <textarea id="css-code" onkeyup="run()"></textarea>
+
+        <label>JS</label>
+        <textarea id="js-code" onkeyup="run()"></textarea>
+      </div>
+      <!--  -->
+      <div class="right">
+        <label>Output</label>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+
+    <script>
+      function run() {
+        let htmlCode = document.getElementById("html-code").value;
+        let cssCode = document.getElementById("css-code").value;
+        let jsCode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+        //this will store value from textarea
+
+        //now i have to display value in output
+
+        //output.contentDocument==iframe will create another html document on that page and that has own html tag,element so access innerHtml from iframe
+
+        output.contentDocument.body.innerHTML =
+          htmlCode + "<style>" + cssCode + "</style>";
+
+        //for js
+        output.contentWindow.eval(jsCode);
+        //it will evaluate jsCode
+      }
+    </script>
+  </body>
+</html>

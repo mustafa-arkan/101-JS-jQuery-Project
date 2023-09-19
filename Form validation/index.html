@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="container">
+    <form>
+      <div class="input_group">
+        <label>Full Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="user_name"
+          onkeyup="validName()"
+        />
+        <span id="name_error"></span>
+      </div>
+
+      <div class="input_group">
+        <label>Phone No.</label>
+        <input
+          type="tel"
+          placeholder="Your Phone Number"
+          id="user_phone"
+          onkeyup="validPhone()"
+        />
+        <span id="phone_error"></span>
+      </div>
+
+      <div class="input_group">
+        <label>Email Id</label>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          id="user_email"
+          onkeyup="validEmail()"
+        />
+        <span id="email_error"></span>
+      </div>
+
+      <div class="input_group">
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="user_pass"
+          onkeyup="validPass()"
+        />
+        <span id="pass_error"></span>
+      </div>
+
+      <button onclick="return validateForm()">Submit</button>
+      <span id="submit_error"></span>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

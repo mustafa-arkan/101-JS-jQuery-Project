@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Bank</h1>
+    </header>
+    <main>
+      <section class="display_data">
+        <div class="show_deposite">
+          <h3>Deposite</h3>
+          <h4>$<span id="deposite_total">00</span></h4>
+        </div>
+        <div class="show_withdraw">
+          <h3>Withdraw</h3>
+          <h4>$<span id="withdraw_total">00</span></h4>
+        </div>
+        <div class="show_balance">
+          <h3>Balance</h3>
+          <h4>$<span id="balance_total">00</span></h4>
+        </div>
+      </section>
+      <section class="input_data">
+        <form>
+          <h3>Please Deposite.</h3>
+
+          <div>
+            <input
+              type="text"
+              style="width: 75%"
+              placeholder="$ Amount you want to deposite."
+              id="deposite_field"
+            />
+          </div>
+
+          <button type="button" id="btn_deposite">Deposite</button>
+        </form>
+        <!--  -->
+        <form>
+          <h3>Please Withdraw.</h3>
+
+          <div>
+            <input
+              type="text"
+              style="width: 75%"
+              id="withdraw_field"
+              placeholder="$ Amount you want to withdraw."
+            />
+          </div>
+
+          <button type="button" id="btn_withdraw">Withdraw</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="deposite.js"></script>
+  </body>
+</html>
